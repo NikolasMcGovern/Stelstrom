@@ -12,7 +12,11 @@ div.writing {
 }
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
 
 
 
@@ -204,6 +208,7 @@ As Vinnie disappears into the tower, Isaac moves to stand next to me, watching h
 
 “What’d you think she was, a fairy?” I grab the case and tuck it under my arm. I walk to the door. “Let’s go. We’ve got a ball to attend.”
 
+[[Head to Hotel|Hotel Entrance]]
 &lt;&lt;else&gt;&gt;\
 She grins and strides forward. “Warren Lawson! Never thought I’d see you again!” She grabs my arm and jerks me to the ground. I stumble and stagger, trying to regain my balance.
 
@@ -259,7 +264,7 @@ Rebellion Meeting. 7pm. Underground. Attend market on Coalcoast Lane
 &lt;&lt;set $rebelMeetingKnown to true&gt;&gt;\
 
 [[Head to Hotel|Hotel Entrance]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Hotel Entrance" tags="" position="407,951" size="100,100">One of Bloodworth’s carriages, a sleekly elegant vehicle with spires decorating the top rim lead by two glossy black horses, awaits us at the foot of the tower. A pompous-looking servant ushers us inside and slams the door. The windows are curtained and I’m too nervous about getting food stains or oil stains or any kind of stains on them that I don’t move them to observe the view, even though, logically, I know my hands are clean. I’m nervous. I was nervous before, but running into Vinnie did not help. She reminds me of everything I ought to be nervous about.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Hotel Entrance" tags="" position="406,951" size="100,100">One of Bloodworth’s carriages, a sleekly elegant vehicle with spires decorating the top rim lead by two glossy black horses, awaits us at the foot of the tower. A pompous-looking servant ushers us inside and slams the door. The windows are curtained and I’m too nervous about getting food stains or oil stains or any kind of stains on them that I don’t move them to observe the view, even though, logically, I know my hands are clean. I’m nervous. I was nervous before, but running into Vinnie did not help. She reminds me of everything I ought to be nervous about.
 
 After a short trip, we arrive at a fancy hotel where the pompous servant ushers us into the lobby and the lobbyist then ushers us into a room and the room service-woman ushers us into the dining area and sets finger sandwiches, mini cakes, and light punch before us. Isaac asked for something a bit more, but she said we would spoil our appetites for the ball.
 
@@ -277,11 +282,10 @@ I try to smile at his antics, but honestly, I can’t. I’m far, far too nervou
 
 “Nine,” I say decisively. I grab a sandwich, stuff it in my mouth, and then head for the door.
 
-[[Go for a walk|Walk]]
+[[Go for a walk|On Time][$regime += 1]]
 &lt;&lt;if $rebelMeetingKnown&gt;&gt;
 [[Go to rebel meeting|Rebel Meeting]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Walk" tags="" position="333,1101" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
-[[Head to Bloodworth Manor|On Time]]</tw-passagedata><tw-passagedata pid="12" name="Rebel Meeting" tags="" position="481,1101" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Rebel Meeting" tags="" position="481,1101" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 Stelstrom’s layout begins by making sense, a logical grid system separated into districts each having a different purpose such as markets, government buildings, or manors, but then, as wealth decreases and population increases, the grid system breaks down and then disappears. Coalcoast Lane, the street indicated on Vinnie’s mysterious letter, is a street lined with hawkers selling garbage food, beggars who are too tired to beg, and muck six inches deep with a ragtag bunch of children wading through it, searching for treasures washing down from the logical grid into their land of chaotic squalor. The sky is invisible, in part due to smog and in part to the precarious stack upon stack tenement buildings.
 
 I cover my nose with my handkerchief and attempt to curb my disgust. Rivermire had its poorer areas, to be sure, but nothing to this extent.
@@ -294,8 +298,8 @@ Yet I’m here.
 
 [[I should go. I can always talk to Vinnie again at the dragon stables. She would understand that it would be foolish for me to attend.|Leave]]
 [[I should wait for a few minutes, maybe wander the streets. Maybe I can find her.|Wait for Vinnie]]
-[[I should ask someone about Vinnie.|Ask about Vinnie]]</tw-passagedata><tw-passagedata pid="13" name="Leave" tags="" position="331,1251" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
-[[Head to Bloodworth Manor|On Time]]</tw-passagedata><tw-passagedata pid="14" name="Wait for Vinnie" tags="" position="481,1251" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;
+[[I should ask someone about Vinnie.|Ask about Vinnie]]</tw-passagedata><tw-passagedata pid="12" name="Leave" tags="" position="331,1251" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+[[Head to Bloodworth Manor|On Time]]</tw-passagedata><tw-passagedata pid="13" name="Wait for Vinnie" tags="" position="481,1251" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;
 I wander the streets, gaining more and more strange looks as I pass. Street urchins keep brushing next to me, obviously trying to pickpocket me. Fortunately, I had the foresight to come with empty pockets. The more looks I receive, the more I realize how completely conspicuous I am. 
 
 With Bloodworth’s involvement in my life, that can’t be a good thing.
@@ -303,7 +307,7 @@ With Bloodworth’s involvement in my life, that can’t be a good thing.
 [[I should go. I can always talk to Vinnie again at the dragon stables. She would understand that it would be foolish for me to attend.|Leave]]
 
 [[I should ask someone about Vinnie.|Ask about Vinnie]]
-</tw-passagedata><tw-passagedata pid="15" name="Ask about Vinnie" tags="" position="631,1251" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="14" name="Ask about Vinnie" tags="" position="631,1251" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 I spot an old woman huddled beneath makeshift hovel, a little space made from discarded wood and cloth. She gazes at the crowd with mild but intelligent eyes. If I’m going to talk to anyone, she seems like a good start.
 
 “Excuse me, ma’am,” I say gently.
@@ -323,7 +327,7 @@ The old woman smirks. “She did, did she? Down the street a few buildings and t
 Vinnie Smith stands there, tapping her foot. She grins widely when she sees me. “It’s about time!” She grabs my arm and pulls me into the alley. “Come on! We have to hurry!”
 
 [[Stop and demands information]]
-[[Go along with Vinnie]]</tw-passagedata><tw-passagedata pid="16" name="Stop and demands information" tags="" position="435,1401" size="100,100">Skid to a halt. “I’m not going with you until I get some answers. What is this?”
+[[Go along with Vinnie]]</tw-passagedata><tw-passagedata pid="15" name="Stop and demands information" tags="" position="435,1401" size="100,100">Skid to a halt. “I’m not going with you until I get some answers. What is this?”
 
 Vinnie pauses. She laughs softly to herself. “Sometimes, I forget what the years can do to a person.”
 
@@ -355,7 +359,7 @@ I left Rivermire because I wanted to live life like my father, striving to be be
 Vinnie stands and offers me her hand. “Come and see!”
 
 [[Go along with Vinnie]]
-[[An uneasy feeling grows in the pit of my stomach. This has the makings of a classic rebellion doomed to tragic failure. Angry, starving poor. An idolized leader. A lack of faith in the government. I can’t go with her. I shake my head.|Refuse Vinnie]]</tw-passagedata><tw-passagedata pid="17" name="Go along with Vinnie" tags="" position="706,1401" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[An uneasy feeling grows in the pit of my stomach. This has the makings of a classic rebellion doomed to tragic failure. Angry, starving poor. An idolized leader. A lack of faith in the government. I can’t go with her. I shake my head.|Refuse Vinnie]]</tw-passagedata><tw-passagedata pid="16" name="Go along with Vinnie" tags="" position="706,1401" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 We zigzag through the alley until we reach a building that looked even more decrepit than the surrounding decrepit buildings. Vinnie knocks on the door- three times, pause, soft twice, three more times- and the door swings opens. It’s pitch dark in there. Vinnie takes me hand again and pulls me inside.
 
 “Stairs, careful” She says.
@@ -395,7 +399,7 @@ She chuckles darkly. “Ah, Stelstrom. The vacation spot of the world, known for
 
 [[&quot;Absolutely, I want to help.&quot;|Aid Rebellion]]
 [[&quot;Yes, but what are you actually trying to ask me?&quot;|Question Rebellion]]
-[[&quot;No&quot;|Refuse Rebellion]]</tw-passagedata><tw-passagedata pid="18" name="Aid Rebellion" tags="" position="536,1554" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
+[[&quot;No&quot;|Refuse Rebellion]]</tw-passagedata><tw-passagedata pid="17" name="Aid Rebellion" tags="" position="536,1554" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
 &lt;&lt;set $obeyMynatt += 1&gt;&gt;\
 “Excellent,” Mynatt says. She waves me away dismissively. “You can take him away for now, Vinnie. We’ll be in contact. Get him where he needs to be and then return quickly for the meeting.”
 
@@ -408,7 +412,7 @@ And with that, I am shooed out of Mynatt’s presence, out of the strange house,
 I return to the hotel, confused and overwhelmed, but determined to survive the ball without being bombarded with thoughts of my bizarre day.
 
 [[Head to Bloodworth Manor|Ball]]
-</tw-passagedata><tw-passagedata pid="19" name="Ball" tags="" position="502,1810" size="100,100">According to a textbook I perused back in Rivermire soon after receiving the letter, the Rebirth Ball was an annual holiday hosted by the King or Queen of Stelstrom hundreds of years ago. The King or Queen, terms that I found to be misleading because upon further study they were essentially judicial farmers, would harvest their own crops and prepare a massive feast for all of Stelstrom. Named Rebirth in order to commemorate the rebirth of Stelstrom’s attention to fulfilment for all, it was one of the most popular celebrations of the year.
+</tw-passagedata><tw-passagedata pid="18" name="Ball" tags="" position="502,1810" size="100,100">According to a textbook I perused back in Rivermire soon after receiving the letter, the Rebirth Ball was an annual holiday hosted by the King or Queen of Stelstrom hundreds of years ago. The King or Queen, terms that I found to be misleading because upon further study they were essentially judicial farmers, would harvest their own crops and prepare a massive feast for all of Stelstrom. Named Rebirth in order to commemorate the rebirth of Stelstrom’s attention to fulfilment for all, it was one of the most popular celebrations of the year.
 
 However, it was disbanded after the monarchy shifted from being judicial farmers to being simply judicial and then to being, well, monarchs. It was all but forgotten when the monarchy itself was disbanded in favor of aristocratic oligarchy.
 
@@ -478,12 +482,12 @@ I look up to find Bloodworth observing me, calculating and intense.
 He thinks for a moment and his smile fades. “I want you to help me destroy the rebellion. I am going to host a city-wide attack on them in exactly a week’s time. I have been gathering the law enforcement officials from all of Stelstrom’s allies and together, I think we can end it. Once the rebellion is gone and no longer feeding lies to the naïve poor, we can begin telling them the truth. We can begin clearing the aristocracy of corruption, with the help of the poor. What say you?”
 
 &lt;&lt;if $rebel &lt; 5&gt;&gt;\
-[[“Yes. Yes, I’ll help you.”|Aid Bloodworth][regime += 2]]
+[[“Yes. Yes, I’ll help you.”|Aid Bloodworth][$regime += 2]]
 &lt;&lt;/if&gt;&gt;\
 [[“What, exactly, would I be doing?”|Question Bloodworth]]
 [[“No. I offer my sincerest apologies, but I don’t believe I belong in this conflict.”|Refuse Bloodworth]]
 
-</tw-passagedata><tw-passagedata pid="20" name="Refuse Vinnie" tags="" position="366,1556" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="19" name="Refuse Vinnie" tags="" position="366,1556" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
 “I’m sorry, Vinnie.”
 
 “Warren?”
@@ -502,7 +506,7 @@ She smiles a bit sadly. “I always do.”
 
 I leave.
 
-[[Go to Bloodworth Manor|Ball]]</tw-passagedata><tw-passagedata pid="21" name="Question Rebellion" tags="" position="759,1711" size="100,100">“I’m asking for your worldview, child,” Mynatt says impatiently.
+[[Go to Bloodworth Manor|Ball]]</tw-passagedata><tw-passagedata pid="20" name="Question Rebellion" tags="" position="759,1711" size="100,100">“I’m asking for your worldview, child,” Mynatt says impatiently.
 
 “My worldviews?” I repeat.
 
@@ -515,7 +519,7 @@ Mynatt nods. “It is a complicated situation. I am a complicated person. I can 
 [[“I want to help.”|Aid Rebellion]]
 [[“Is staying out of it an option?”|Stay Out]]
 [[“No. I have no intention of helping you.”|Refuse Rebellion]]
-</tw-passagedata><tw-passagedata pid="22" name="Refuse Rebellion" tags="" position="684,1551" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="21" name="Refuse Rebellion" tags="" position="684,1551" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
 &lt;&lt;set $disobeyMynatt += 2&gt;&gt;\
 The words have hardly left my mouth before a revolver is pointed at my face.
 
@@ -535,7 +539,7 @@ And with that, I am grabbed and dragged out of Mynatt’s presence, out of the s
 I return to the hotel, confused and overwhelmed, but determined to survive the ball without being bombarded with thoughts of my bizarre day.
 
 [[Head to Bloodworth Manor|Ball]]
-</tw-passagedata><tw-passagedata pid="23" name="Stay Out" tags="" position="634,1743" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="22" name="Stay Out" tags="" position="634,1743" size="100,100">&lt;&lt;set $regime += 2&gt;&gt;\
 &lt;&lt;set $disobeyMynatt += 1&gt;&gt;\
 “You can take him away for now, Vinnie.” Mynatt waves dismissively. “We’ll be in contact. Get him where he needs to be and then return quickly for the meeting.”
 
@@ -548,7 +552,7 @@ And with that, I am shooed out of Mynatt’s presence, out of the strange house,
 I return to the hotel, confused and overwhelmed, but determined to survive the ball without being bombarded with thoughts of my bizarre day.
 
 [[Head to Bloodworth Manor|Ball]]
-</tw-passagedata><tw-passagedata pid="24" name="On Time" tags="" position="168,1558" size="100,100">We arrive at Bloodworth Manor at exactly the moment the gates swing open and the line of waiting carriages parade into what I assume is a courtyard, but a courtyard unlike any I had ever seen. It’s formed entirely of polished black marble, like obsidian made of glass, and it reflects the white-shining lanterns and steam emanating from the overarcing balconies, giving the impression that visitors must walk upon the night in order to enter the manor. The manor wraps completely around the courtyard save for the aforementioned gate. It looks more like a fortress than a home.
+</tw-passagedata><tw-passagedata pid="23" name="On Time" tags="" position="168,1558" size="100,100">We arrive at Bloodworth Manor at exactly the moment the gates swing open and the line of waiting carriages parade into what I assume is a courtyard, but a courtyard unlike any I had ever seen. It’s formed entirely of polished black marble, like obsidian made of glass, and it reflects the white-shining lanterns and steam emanating from the overarcing balconies, giving the impression that visitors must walk upon the night in order to enter the manor. The manor wraps completely around the courtyard save for the aforementioned gate. It looks more like a fortress than a home.
 
 I respect the ingenuity of the creators, but I don’t have to appreciate their ingenuity. The place is uncanny. I don’t like uncanny, buildings ought to be… canny.
 
@@ -564,7 +568,7 @@ I pat my breast pocket. “Yes.”
 
 Taking a deep breath, I nod. We skirt along the edge of the carriage line, show the gatekeeper the letter, the continue into Bloodworth Manor.
 
-[[Enter the ball|Ball]]</tw-passagedata><tw-passagedata pid="25" name="Aid Bloodworth" tags="" position="354,2036" size="100,100">“Excellent!” Bloodworth replies. “I’ll contact you tomorrow with your first assignment. As of now, eat, drink, enjoy the party.” He nods respectfully. “A pleasure to make your acquaintances, gentlemen.”
+[[Enter the ball|Ball]]</tw-passagedata><tw-passagedata pid="24" name="Aid Bloodworth" tags="" position="354,2036" size="100,100">“Excellent!” Bloodworth replies. “I’ll contact you tomorrow with your first assignment. As of now, eat, drink, enjoy the party.” He nods respectfully. “A pleasure to make your acquaintances, gentlemen.”
 
 “The pleasure is ours!” Isaac answers. As Bloodworth walks away, Isaac turns to me and grins. “So we get to stay at the fancy hotel, right?”
 
@@ -580,13 +584,13 @@ None of this can possibly end well.
 [[Head to the hotel to sleep|Meet Vinnie]]
 &lt;&lt;else&gt;&gt;\
 [[Head to the hotel to sleep|Hotel]]
-&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="26" name="Question Bloodworth" tags="" position="507,1941" size="100,100">“Spying,” Bloodworth says. “According to the intel I have on you, you rose to relatively impressive heights of government prominence from a relatively low birth. The rebellion is desperate for knowledgeable leaders. They would foam like a rabid dog at the chance to bring someone like you into their ranks.”
+&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="25" name="Question Bloodworth" tags="" position="507,1941" size="100,100">“Spying,” Bloodworth says. “According to the intel I have on you, you rose to relatively impressive heights of government prominence from a relatively low birth. The rebellion is desperate for knowledgeable leaders. They would foam like a rabid dog at the chance to bring someone like you into their ranks.”
 
 &lt;&lt;if $rebel &lt; 5&gt;&gt;\
 [[Despite his manipulations, I do believe Bloodworth is right as far as the rebellion is concerned. They won’t accomplish anything with violence. They need to be disbanded so more appropriate movements can take their place. “Yes. Yes, I’ll help you.”|Aid Bloodworth][$regime += 2]]
 &lt;&lt;/if&gt;&gt;\
 [[I can’t be a part of this. Every word out of Bloodworth’s mouth has the feeling of a lie. I suppose the best way to converse with him is to lie as well. “Yes. Yes, I’ll help you.”|Aid Bloodworth][$liedBloodworth to true, $rebel += 2]]
-[[“No. I offer my sincerest apologies, but I don’t believe I belong in this conflict.”|Refuse Bloodworth]]</tw-passagedata><tw-passagedata pid="27" name="Refuse Bloodworth" tags="" position="662,2032" size="100,100">&lt;&lt;set $refusedBloodworth to true&gt;&gt;\
+[[“No. I offer my sincerest apologies, but I don’t believe I belong in this conflict.”|Refuse Bloodworth]]</tw-passagedata><tw-passagedata pid="26" name="Refuse Bloodworth" tags="" position="662,2032" size="100,100">&lt;&lt;set $refusedBloodworth to true&gt;&gt;\
 &lt;&lt;set $rebel += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 Bloodworth chuckles darkly. “Everyone belongs in this conflict, boy.”
@@ -600,7 +604,7 @@ I’m mildly insulted by his insinuations, but I’m more concerned with the mon
 
 I have to change tactics.
 
-[[I lie. “Yes. Yes, I’ll help you.”|Aid Bloodworth][$liedBloodworth to true, $rebel += 2]]</tw-passagedata><tw-passagedata pid="28" name="Hotel" tags="" position="486,2173" size="100,100">I pace the length of the hotel rooms repeatedly. I imagine I’m annoying the visitors in the rooms below, but I can’t bring myself to muster the energy to care or to stop myself. My life feels so fragile right now, capable of falling and shattering at any moment.
+[[I lie. “Yes. Yes, I’ll help you.”|Aid Bloodworth][$liedBloodworth to true, $rebel += 2]]</tw-passagedata><tw-passagedata pid="27" name="Hotel" tags="" position="486,2173" size="100,100">I pace the length of the hotel rooms repeatedly. I imagine I’m annoying the visitors in the rooms below, but I can’t bring myself to muster the energy to care or to stop myself. My life feels so fragile right now, capable of falling and shattering at any moment.
 
 “Good morning!” Isaac says, stumbling out of his room. His hair sticks out in all directions and he is wearing bright purple silk pajamas that I am fairly confident he did not own before. I consider asking, but again, I just don’t care.
 
@@ -653,7 +657,7 @@ Before I can find either a proper retort or my journal, a knock sounds on the do
 I exchange a glance with Isaac before walking to the door.
 
 [[Open Door|Bloodworth at door]]
-</tw-passagedata><tw-passagedata pid="29" name="Meet Vinnie" tags="" position="194,2120" size="100,100">The next day, I slip out of the hotel room early in the morning and follow the address Vinnie gave me. It was only yesterday when last we spoke, but it seems like it’s been longer. Perhaps that has something to do with the years we have spent apart.
+</tw-passagedata><tw-passagedata pid="28" name="Meet Vinnie" tags="" position="194,2120" size="100,100">The next day, I slip out of the hotel room early in the morning and follow the address Vinnie gave me. It was only yesterday when last we spoke, but it seems like it’s been longer. Perhaps that has something to do with the years we have spent apart.
 
 The address leads me to a tenement house located in the slums. The streets are lined with hawkers selling garbage, beggars who are too tired to beg, and muck six inches deep with a ragtag bunch of children wading through it, searching for treasures washing down from the glittering aristocracy into their land of chaotic squalor. The sky is invisible, in part due to smog and in part to the precarious stack upon stack tenement buildings.
 
@@ -743,7 +747,7 @@ She laughs. “If Bloodworth thinks he is the only one with spies, he must be mo
 “Yes,” Vinnie says. She stands suddenly and offers me her hand. “I’m glad to know you don’t support him. Come on, there’s some people I want you to meet.”
 
 [[Follow Vinnie]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Follow Vinnie" tags="" position="146,2257" size="100,100">I take her hand and follow her.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Follow Vinnie" tags="" position="146,2257" size="100,100">I take her hand and follow her.
 
 We zigzag through the alleys until we reach a building that looks even more decrepit than the surrounding decrepit buildings. Vinnie knocks on the door- three times, pause, soft twice, three more times- and the door swings opens. It’s pitch dark in there. Vinnie takes me hand again and pulls me inside.
 
@@ -785,18 +789,18 @@ There’s no point in lying. If Vinnie knows the truth, if the rebellion has spi
 “How so?” Mynatt asks.
 
 [[“He is forcing me to work for him. He wants me to help him wipe out the rebellion.”|Truth to Mynatt]]
-[[“He sent me a threatening letter. He’s trying to manipulate me.”|Lie to Mynatt]]</tw-passagedata><tw-passagedata pid="31" name="Truth to Mynatt" tags="" position="221,2403" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[“He sent me a threatening letter. He’s trying to manipulate me.”|Lie to Mynatt]]</tw-passagedata><tw-passagedata pid="30" name="Truth to Mynatt" tags="" position="221,2403" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 Mynatt purses her lips. “Remarkable. Tell me, Mr. Lawson, what do you think of our rebellion?”
 
 [[“Stelstrom needs a rebellion. The aristocracy is too far gone to be useful in any capacity now.”|Needs Rebellion]]
-[[“Stelstrom needs order. If the rebellion can provide that, then it has my respect.”|Needs Order]]</tw-passagedata><tw-passagedata pid="32" name="Lie to Mynatt" tags="" position="86,2400" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\</tw-passagedata><tw-passagedata pid="33" name="Needs Rebellion" tags="" position="247,2592" size="100,100">&lt;&lt;set $obeyMynatt += 1&gt;&gt;\
+[[“Stelstrom needs order. If the rebellion can provide that, then it has my respect.”|Needs Order]]</tw-passagedata><tw-passagedata pid="31" name="Lie to Mynatt" tags="" position="86,2400" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\</tw-passagedata><tw-passagedata pid="32" name="Needs Rebellion" tags="" position="247,2592" size="100,100">&lt;&lt;set $obeyMynatt += 1&gt;&gt;\
 “I agree,” Mynatt says. Finally, her face cracks into what must be a smile. “If you assist us, Mr. Lawson, I assure you that we will do our best to protect you from Bloodworth’s machinations. I can’t promise your safety. However, I can promise you the pride found in the truth that you are fighting for the righteous cause. That’s more than anything Bloodworth can offer you.”
 
 Mynatt offers me her hand again and I shake it. She turns to Vinnie. “Make sure he returns to his hotel safely. We’ll be in contact.”
 
 Vinnie salutes. She takes my hand and pulls me out of Mynatt’s presence. Mynatt is right. As I follow, deep down, I can feel that I am doing the right thing. I just know it.
 
-[[Return to Hotel|Hotel]]</tw-passagedata><tw-passagedata pid="34" name="Needs Order" tags="" position="366,2591" size="100,100">&lt;&lt;set $disobeyMynatt += 1&gt;&gt;\
+[[Return to Hotel|Hotel]]</tw-passagedata><tw-passagedata pid="33" name="Needs Order" tags="" position="366,2591" size="100,100">&lt;&lt;set $disobeyMynatt += 1&gt;&gt;\
 “Of course it can provide order!” Mynatt snaps. Finally, her face cracks into what must be a smile. “If you assist us, Mr. Lawson, I assure you that we will do our best to protect you from Bloodworth’s machinations. I can’t promise your safety. However, I can promise you the pride found in the truth that you are fighting for the righteous cause. That’s more than anything Bloodworth can offer you.”
 
 Mynatt offers me her hand again and I shake it. She turns to Vinnie. “Make sure he returns to his hotel safely. We’ll be in contact.”
@@ -805,7 +809,7 @@ Vinnie salutes. She takes my hand and pulls me out of Mynatt’s presence. I’m
 
 I wish life could be black and white, good and bad, happiness and sadness like in all of the stories. I wish I weren’t trapped in the middle of it all, trying to muddle my way through. I wish life could be simple.
 
-[[Return to hotel|Hotel]]</tw-passagedata><tw-passagedata pid="35" name="Bloodworth at door" tags="" position="602,2331" size="100,100">He came himself? He didn’t send a servant? Why would he do that?
+[[Return to hotel|Hotel]]</tw-passagedata><tw-passagedata pid="34" name="Bloodworth at door" tags="" position="602,2331" size="100,100">He came himself? He didn’t send a servant? Why would he do that?
  
 “Good morning, gentlemen,” Bloodworth says drolly to what is, I’m sure, a very stupid look on my face.
  
@@ -830,7 +834,7 @@ He knows about Vinnie? I blanche for a second, then stammer an answer.
 [[“Yes, I did.”|Knew Vinnie][$obeyBloodworth to $obeyBloodworth + 1]]
 [[“I don’t believe so.”|Didn&#39;t know Vinnie]]
 [[“No, I didn’t.”|Didn&#39;t know Vinnie][$disobeyBloodworth to $disobeyBloodworth + 1]]
-</tw-passagedata><tw-passagedata pid="36" name="Knew Vinnie" tags="" position="527,2481" size="100,100">I can’t think of anything else to say. Besides, the fact that he asked the question means he clearly already knows the answer. Lying would get me, and Vinnie, nowhere.
+</tw-passagedata><tw-passagedata pid="35" name="Knew Vinnie" tags="" position="527,2481" size="100,100">I can’t think of anything else to say. Besides, the fact that he asked the question means he clearly already knows the answer. Lying would get me, and Vinnie, nowhere.
  
 Bloodworth takes a seat next to Isaac. His guards move to stand behind him. He gestures to the seat in front of him and I take it, nowhere else to go.
  
@@ -854,10 +858,10 @@ My tone was hostile, but I can’t help it.
 
 [[I ought to protest Vinnie’s involvement in the rebellion. I can’t let her get hurt.|Lie about Vinnie]]
 [[I should agree, but have no intention of following through. He won’t leave until he gets an affirmation from me, so the sooner he leaves the sooner I can warn Vinnie somehow.|Agree about Vinnie][$warnVinnie to true]]
-[[His spies know too much about Vinnie for me to adequately be able to do anything to save her. The best thing I could do is go along with his plan and then use whatever favor I might have to bargain for her freedom.|Agree about Vinnie][$bargainVinnie to true]]</tw-passagedata><tw-passagedata pid="37" name="Didn&#39;t know Vinnie" tags="" position="707,2451" size="100,100">“Really?” Bloodworth says, a dangerous edge entering his voice. “Think harder.”
+[[His spies know too much about Vinnie for me to adequately be able to do anything to save her. The best thing I could do is go along with his plan and then use whatever favor I might have to bargain for her freedom.|Agree about Vinnie][$bargainVinnie to true]]</tw-passagedata><tw-passagedata pid="36" name="Didn&#39;t know Vinnie" tags="" position="707,2451" size="100,100">“Really?” Bloodworth says, a dangerous edge entering his voice. “Think harder.”
 
 [[“Yes, I did.”|Knew Vinnie]]
-[[“No, I didn’t.”|Didn&#39;t know Vinnie 2]]</tw-passagedata><tw-passagedata pid="38" name="Lie about Vinnie" tags="" position="562,2631" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[“No, I didn’t.”|Didn&#39;t know Vinnie 2]]</tw-passagedata><tw-passagedata pid="37" name="Lie about Vinnie" tags="" position="562,2631" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “She would never join the rebellion,” I say. “She came to Stelstrom looking for success. She won’t find that through a rebellion, and she’d know that.”
  
@@ -875,18 +879,18 @@ Bloodworth nods thoughtfully, then stands. “That’s none of my concern. You w
  
 He leaves, guards marching behind him.
 
-[[Head to Stables|Stables]]</tw-passagedata><tw-passagedata pid="39" name="Didn&#39;t know Vinnie 2" tags="" position="821,2521" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;
+[[Head to Stables|Stables]]</tw-passagedata><tw-passagedata pid="38" name="Didn&#39;t know Vinnie 2" tags="" position="821,2521" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;
 Bloodworth smirks. He’s silent for a long moment, just staring at me, like a hawk watching a mouse. “Well then,” He stands to his feet. “Go to the stables this afternoon. Ask to see Frellan the dragon. You’ll run into the stablehand, I’m sure. Report back to me what you find and any information you might find out.”
 
 [[Head to Stables|Stables]]
-</tw-passagedata><tw-passagedata pid="40" name="Agree about Vinnie" tags="" position="687,2621" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="39" name="Agree about Vinnie" tags="" position="687,2621" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
 I nod. “I’ll go.”
  
 “Excellent,” Bloodworth says. “Report back to me after you go.”
  
 He leaves, the guards trailing behind him.
 
-[[Head to Stables|Stables]]</tw-passagedata><tw-passagedata pid="41" name="Stables" tags="" position="562,2781" size="100,100">I find the stables. I take a steam-lift to one of the highest floors, wondering what I could possibly say to Vinnie. I’m a terrible liar. I’m a good friend. I’m not going to betray, but I have no idea how to save her.
+[[Head to Stables|Stables]]</tw-passagedata><tw-passagedata pid="40" name="Stables" tags="" position="562,2781" size="100,100">I find the stables. I take a steam-lift to one of the highest floors, wondering what I could possibly say to Vinnie. I’m a terrible liar. I’m a good friend. I’m not going to betray, but I have no idea how to save her.
  
 The lift stops moving and a bell dings. I open the rail gate and step onto the floor. Massive stalls line the walkway. A green dragon peers over one and snorts at me, sparks flying from its nose. I wonder if that’s the dragon Isaac and I rode yesterday.
  
@@ -905,7 +909,7 @@ Before I can make up a story, her face hardens and she whips back around to me. 
 [[“Yes, he did.”|Sent by Bloodworth Truth]]
  
 [[“No, he didn’t.”|Sent by Bloodworth Lie]]
-</tw-passagedata><tw-passagedata pid="42" name="Sent by Bloodworth Truth" tags="" position="487,2931" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+</tw-passagedata><tw-passagedata pid="41" name="Sent by Bloodworth Truth" tags="" position="487,2931" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 “So he knows about me? He knows we’re friends?”
  
 I nod.
@@ -913,7 +917,7 @@ I nod.
 Vinnie pulls her cap off and runs her hands through her short hair. “What does he want?”
 
 [[Tell her the truth - he wanted me to spy on her and the rebellion so that he could destroy them.|Sent to Spy]]
-[[It’s best to keep some secrets to myself, if possible. Tell her he wants me to see where she stands.|Sent to Check]]</tw-passagedata><tw-passagedata pid="43" name="Sent by Bloodworth Lie" tags="" position="637,2931" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+[[It’s best to keep some secrets to myself, if possible. Tell her he wants me to see where she stands.|Sent to Check]]</tw-passagedata><tw-passagedata pid="42" name="Sent by Bloodworth Lie" tags="" position="637,2931" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
 Vinnie sighs and crosses her arms. She rocks back and forth on her heels. “Sorry, I’ve just been paranoid that he is watching me. You never know, these days.” She pauses. “So, what did you want to talk about?”
  
 “The rebellion,” I say. “I want to talk to you about the rebellion.”
@@ -949,7 +953,7 @@ Vinnie smiles hugely at that. She glances over her shoulder, checks that no one 
 
 [[&quot;Yes.&quot;|Help with Attack]]
 [[&quot;No.&quot;|Refuse to Help with Attack]]
-&lt;&lt;/if&gt;\</tw-passagedata><tw-passagedata pid="44" name="Sent to Spy" tags="" position="412,3081" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
+&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="43" name="Sent to Spy" tags="" position="412,3081" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
 “He wants me to convince you to let me join the rebellion and then, naturally, he wants information.”
  
 Vinnie huffs a laugh. “I was way ahead of him, on that. Does he know I talked to you about that?”
@@ -970,7 +974,7 @@ Vinnie laughs a bit at that, but then she pauses, looking serious, sad. Finally,
  
 Without another word, she turns and walks away, back to her dragon.
 
-[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="45" name="Sent to Check" tags="" position="561,3081" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="44" name="Sent to Check" tags="" position="561,3081" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
 &lt;&lt;set $obeyBloodworth += 1&gt;&gt;\
 “He suspects you,” I say. “He wants to know where you stand and, if you are with the rebels, he wants me to use you to find information about them.”
  
@@ -992,11 +996,11 @@ I nod. “Thank you, Vinnie.”
  
 She smiles, then spins suddenly and practically bolts back down the hall into the stall with the dragon.
 
-[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="46" name="Help with Attack" tags="" position="781,3074" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
+[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="45" name="Help with Attack" tags="" position="781,3074" size="100,100">&lt;&lt;set $rebel += 2&gt;&gt;\
 &lt;&lt;set $obeyMynatt += 1&gt;&gt;\
 “Brilliant!” Vinnie exclaims. “Thank you, Warren! We’ll get in touch with you via pigeon to find out the details.” Something shuffles in the hall outside. “I have to get back to work now. Thanks for coming though!”
 
-[[Return to Hotel]]</tw-passagedata><tw-passagedata pid="47" name="Refuse to Help with Attack" tags="" position="908,3076" size="100,100">&lt;&lt;set $disobeyMynatt += 1&gt;&gt;\
+[[Return to Hotel]]</tw-passagedata><tw-passagedata pid="46" name="Refuse to Help with Attack" tags="" position="908,3076" size="100,100">&lt;&lt;set $disobeyMynatt += 1&gt;&gt;\
 “Why not?” Vinnie asks.
  
 “It’s too risky,” I say. “Besides, attacking a private home? In the aristocratic part of town? No insider could provide enough information to make that plan work.”
@@ -1015,7 +1019,7 @@ I nod. “I suppose that’s fine. But be careful, Vinnie. Please.”
  
 “I always am,” She says. With that, she replaces her cap, tips it to me, and then leaves the stall. I’m left alone.
 
-[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="48" name="Return to Hotel" tags="" position="641,3298" size="100,100">I stop by the hotel and pick up Isaac, now in his uniform (mismatched again) instead of his silk pajamas. We leave and begin making our way to Bloodworth Manor. Isaac complains about not ordering a carriage, but I’m not really listening.
+[[Return to Hotel]] </tw-passagedata><tw-passagedata pid="47" name="Return to Hotel" tags="" position="641,3298" size="100,100">I stop by the hotel and pick up Isaac, now in his uniform (mismatched again) instead of his silk pajamas. We leave and begin making our way to Bloodworth Manor. Isaac complains about not ordering a carriage, but I’m not really listening.
  
 When I reach the manor, when I am face to face with Bloodworth, what will I say? My options are limited. I can either tell him the information I gathered from Vinnie or I can not. If I do, I risk destroying the rebellion and incriminating Vinnie. If I don’t, the rebellion may be destroyed anyway and I may incriminate myself along with Vinnie. There’s so much confusion, so much unknown, it’s as if the steam and smog from above has seeped into my very thoughts and forced my own consciousness to stumble, staggering for something solid to hold on to.
  
@@ -1036,7 +1040,7 @@ I attempt to smile. “Sir, I went to the stables. I spoke with the stablehand.�
 I take a deep breath. I think about what I want to tell him, and then I reply.
 
 [[“The rebels intend to attack the manor tomorrow.”|Tell of Attack]]
-[[“Vinnie did not know the rebels’ plans.”|Didn&#39;t Know Plans]]</tw-passagedata><tw-passagedata pid="49" name="Tell of Attack" tags="" position="397,3449" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+[[“Vinnie did not know the rebels’ plans.”|Didn&#39;t Know Plans]]</tw-passagedata><tw-passagedata pid="48" name="Tell of Attack" tags="" position="397,3449" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 Bloodworth rubs his chin. “Is that so?”
  
@@ -1065,7 +1069,7 @@ He leads us out of the sitting room, through several maze-like halls, up some st
 He turns and walks back into the manor. “Let them come.”
 
 [[I follow him to talk, try to reason.|Reason with Bloodworth]]
-[[Warn the rebels.|Warn the Rebels]]</tw-passagedata><tw-passagedata pid="50" name="Didn&#39;t Know Plans" tags="" position="716,3447" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
+[[Warn the rebels.|Warn the Rebels]]</tw-passagedata><tw-passagedata pid="49" name="Didn&#39;t Know Plans" tags="" position="716,3447" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “I find that shocking,” Bloodworth says. “She knew nothing?”
  
 “Nothing,” I repeat.
@@ -1089,7 +1093,7 @@ Isaac remains perfectly still. He casts me a terrified look.
 I look into Isaac’s terrified face. So afraid. So afraid for Vinnie, but Isaac. Isaac.
 
 [[Tell the truth.|Truth about Vinnie]]
-[[Continue to lie.|Continue to Lie]]</tw-passagedata><tw-passagedata pid="51" name="Truth about Vinnie" tags="" position="794,3601" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
+[[Continue to lie.|Continue to Lie]]</tw-passagedata><tw-passagedata pid="50" name="Truth about Vinnie" tags="" position="794,3601" size="100,100">&lt;&lt;set $regime += 1&gt;&gt;\
 I tell him everything. I tell him about the rebels’ plan, about Vinnie’s involvement, about the rumors concerning the defense mechanism, everything. When I’m finally done, breathing heavy and eyes strained from staring, unblinkingly, at Isaac, Bloodworth drops him.
  
 “You have turned out more disappointing than I would have assumed,” Bloodworth says. “Your mother was made of sterner stuff.”
@@ -1101,7 +1105,7 @@ Bloodworth kicks Isaac in the side. Isaac grunts and scrambles away, standing ne
 The rebels.
  
 He turns and runs from the room, leaving Isaac and I alone on the balcony.
-[[TEMP END]] </tw-passagedata><tw-passagedata pid="52" name="Continue to Lie" tags="" position="638,3599" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[Rebel Battle]] </tw-passagedata><tw-passagedata pid="51" name="Continue to Lie" tags="" position="638,3599" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “I’m telling the truth!” I insist desperately. “We talked. She admitted to being a rebel, but she would not tell me anything about them, I swear!”
  
@@ -1115,7 +1119,7 @@ The rebels.
  
 I turn back around. Bloodworth tosses Isaac to the ground and runs out of the room, leaving us alone.
 
-[[TEMP END]]</tw-passagedata><tw-passagedata pid="53" name="Reason with Bloodworth" tags="" position="313,3597" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
+[[Rebel Battle]]</tw-passagedata><tw-passagedata pid="52" name="Reason with Bloodworth" tags="" position="313,3597" size="100,100">&lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “Sir, all of the rebels would be killed. A mad dragon is no laughing matter,” I say.
  
 “Oh, it will probably be for me, at my dinner party next week as I retell the events of tomorrow,” He replies. He retakes his seat and smiles. “The rebels will be destroyed and the city will finally have peace.”
@@ -1125,7 +1129,7 @@ I turn back around. Bloodworth tosses Isaac to the ground and runs out of the ro
 “You sound like you sympathize with them, Lawson.” He leans forward, expression suddenly dangerous. “Tell me, why don’t you want me to kill all of those people?”
 
 [[It’s unethical.]]
-[[It’s bad for commerce.]]</tw-passagedata><tw-passagedata pid="54" name="Warn the Rebels" tags="" position="457,3599" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[It’s bad for commerce.]]</tw-passagedata><tw-passagedata pid="53" name="Warn the Rebels" tags="" position="457,3599" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 “Isaac, can you go entertain Lord Bloodworth? I need a moment,” I say.
  
 Isaac nods. “Of course. You’re doing great, Warren.” He claps me on the back and then leaves the balcony.
@@ -1149,7 +1153,7 @@ Isaac’s eyes plead with me. I’m too stunned. I was so worried for Vinnie. I 
 “To whom?” Bloodworth asks.
 
 [[Truth.|Sent to rebels]]
-[[Lie.|Sent elsewhere]]</tw-passagedata><tw-passagedata pid="55" name="It’s unethical." tags="" position="133,3747" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[Lie.|Sent elsewhere]]</tw-passagedata><tw-passagedata pid="54" name="It’s unethical." tags="" position="133,3747" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “Nobody will respect your rule as a legitimate form of government unless you treat the people fairly,” I argue.
  
@@ -1164,7 +1168,8 @@ Bloodworth opens his mouth to reply, but he’s cut off by Isaac running into th
 Isaac nods quickly. “Hundreds of people outside, trying to get through the gate. They look poor.”
  
 Bloodworth stands and dashes from the room.
-[[TEMP END]] </tw-passagedata><tw-passagedata pid="56" name="It’s bad for commerce." tags="" position="273,3747" size="100,100">“Nobody will respect your rule as a legitimate form of government unless you treat the people fairly,” I argue.
+[[Regime Battle]] </tw-passagedata><tw-passagedata pid="55" name="It’s bad for commerce." tags="" position="273,3747" size="100,100">&lt;&lt;set $obeyBloodworth += 1&gt;&gt;\
+“Nobody will respect your rule as a legitimate form of government unless you treat the people fairly,” I argue.
  
 “Defending my own property isn’t fair?” He asks.
  
@@ -1178,7 +1183,7 @@ Isaac nods quickly. “Hundreds of people outside, trying to get through the gat
  
 Bloodworth stands and dashes from the room.
 
-[[TEMP END]] </tw-passagedata><tw-passagedata pid="57" name="Sent to rebels" tags="" position="404,3754" size="100,100">&lt;&lt;set $imprisoned to true&gt;&gt;\
+[[Regime Battle]] </tw-passagedata><tw-passagedata pid="56" name="Sent to rebels" tags="" position="404,3754" size="100,100">&lt;&lt;set $imprisoned to true&gt;&gt;\
 I tell him everything. I tell him about the rebels’ plan, about Vinnie’s involvement, about the rumors concerning the defense mechanism, everything. When I’m finally done, breathing heavy and eyes strained from staring, unblinkingly, at Isaac, Bloodworth drops him.
  
 “You have turned out more disappointing than I would have assumed,” Bloodworth says. “Your mother was made of sterner stuff.”
@@ -1187,7 +1192,7 @@ The hell does that mean?
  
 Bloodworth kicks Isaac in the side. Isaac grunts and scrambles away, crawling onto the metal couch. “Guards!” Bloodworth yells. Immediately, the room is surrounded by guards. “Keep them imprisoned here,” he orders. “I’ll think of a suitable punishment later.”
 
-[[TEMP END]]</tw-passagedata><tw-passagedata pid="58" name="Sent elsewhere" tags="" position="529,3753" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
+[[Rebel Battle]]</tw-passagedata><tw-passagedata pid="57" name="Sent elsewhere" tags="" position="529,3753" size="100,100">&lt;&lt;set $rebel += 1&gt;&gt;\
 &lt;&lt;set $disobeyBloodworth += 1&gt;&gt;\
 “I think he was lost,” I say. “I just wrote ‘I got lost’ on a piece of paper and sent it so that his trainer can know that he needs more work, please, God, let Isaac go!”
  
@@ -1197,7 +1202,214 @@ The rebels.
  
 I turn back around. Bloodworth tosses Isaac to the ground and runs out of the room, leaving us alone.
 
-[[TEMP END]] </tw-passagedata><tw-passagedata pid="59" name="TEMP END" tags="" position="454,3969" size="100,100">Rebel: $rebel
+[[Rebel Battle]] </tw-passagedata><tw-passagedata pid="58" name="Rebel Battle" tags="" position="619,3926" size="100,100">Isaac and I stand completely still for a long moment. Angry shouts, guns firing, people screaming. We both glance at each other, then bolt out of the room. We dash through the seemingly endless halls, running running running, trying to find another exit.
+ 
+“What should we do?” Isaac yells. “Follow Bloodworth?”
+ 
+“Why the hell would we do that?” I reply. “He just tried to kill you!”
+ 
+Isaac stops running, slowing to a jog and then standing still. He pants for a moment, then says, “True. But I imagine he has a way to survive something like this. Following him would be our best bet.”
+ 
+I shake my head slowly. I can’t. I can’t follow Bloodworth, hoping against hope to survive. I know where my allegiance stands, I know what I believe to be right.
+ 
+“Isaac, I can’t,” I say. I hesitate, knowing the next sentence could ruin my career and, more importantly, my friendship with Isaac forever. “I have to—”
+ 
+“Warren!” Someone yells.
+ 
+I turn. Vinnie grins, waves, and pulls herself in through a window.
+ 
+“What, how did, why…?” Isaac stammers for words. “This is the second floor!” Isaac finally says.
+ 
+Vinnie shakes her head. “Third floor, actually. You really need to keep track of where you are.” She focuses on me. “Mynatt sent me ahead to sneak into the house, if possible. We need to get you out. Is there any information we can use?”
+ 
+Isaac crosses his arm. “Nice try Vinnie, but Warren isn’t fighting for the rebels. He stands for the law.”
+ 
+Vinnie turns back to me. “You didn’t tell him?”
+ 
+Isaac freezes. His gaze slowly shifts until he’s staring at me, trying so hard to be stoic but hurting inside, I can tell.
+ 
+“Isaac…” I say.
+ 
+“You’re for them? You’re for the rebels?” He questions.
+ 
+“I just have to do what I believe is right. You can come with me, you can help me change Stelstrom.”
+ 
+Isaac backs away. “No. No. You and I, we always upheld the law. We always believed that justice would eventually win out.”
+ 
+“That’s what’s happening,” I say. “But we have to help it. We have to help the rebellion.”
+ 
+Isaac’s expression hardens. “No. No, you’re different than I thought. You’re different.” He points at Vinnie. “Go on. Go on with her. I’ll find my own way out of this.”
+ 
+“Isaac!” I say.
+ 
+“No!” He shouts. “Just go!” He turns and runs, around a corner, into the endless halls.
+ 
+“Isaac!” I start to follow him.
+ 
+“No!” Vinnie grabs my arm. “We have to go, now! Mynatt could use any information you have.” She starts to tug on my arm towards the window, then pauses. “It’s also the best chance to save Isaac. If we can get in, make the place surrender…”
+ 
+“You’re right. Take me to her,” I say.
+ 
+Vinnie nods, takes my hand, and we run for the window. She helps me scale the wall, but despite never having done so before, I don’t pay much attention to her instructions. My thoughts are filled with Isaac, the choices I’ve made, and the consequences that may follow.
+
+[[And so the end begins...|Rebel Epilogue]]</tw-passagedata><tw-passagedata pid="59" name="Regime Battle" tags="" position="247,3923" size="100,100">Isaac and I stand completely still for a long moment. Angry shouts, guns firing, people screaming. We both glance at each other, then bolt out of the room. We dash through the seemingly endless halls, running running running, trying to find another exit.
+ 
+“What should we do?” Isaac yells. “Follow Bloodworth?”
+ 
+“Why the hell would we do that?” I reply.
+ 
+Isaac stops running, slowing to a jog and then standing still. He pants for a moment, then says, “I imagine he has a way to survive something like this. Following him would be our best bet.”
+ 
+I nod at his reasoning, but I can’t shake the fear that the rebels would be searching for him. Being near Bloodworth might be a death sentence, especially for Isaac. I can’t lose him.
+ 
+“Warren!” Someone shouts.
+ 
+I turn. Vinnie leans into the hall from a window. She grins, waves, drops to the floor, and sprints up to us.
+ 
+“What, how did, why…?” Isaac stammers for words. “This is the second floor!” Isaac finally says.
+ 
+Vinnie shakes her head. “Third floor, actually. You really need to keep track of where you are.”
+ 
+“You’re with the rebels!” Isaac accuses.
+ 
+Vinnie shrugs. “Obviously. Look, join us and I can get you out of here. I can bring you to safety!”
+ 
+Isaac looks at me. I shake my head slowly. “I can’t,” I whisper.
+ 
+Vinnie glares at me. “Why not?”
+ 
+“Because I don’t believe it’s the right thing to do,” I say. I gesture towards Isaac. “But if you want to get to safety, I won’t stop you.”
+ 
+“No, never,” Isaac says. “I’m not leaving you.”
+ 
+Vinnie looks back and forth between us, her glare and anger morphing into a frown and hurt. “Warren… please…”
+ 
+“I’m sorry,” I say.
+ 
+She takes a deep breath. She watches the ground for a long moment, then she straightens her shoulders. “There’s no changing your mind, I suppose.”
+ 
+I smile ruefully. “No. I won’t change my mind.”
+ 
+“I’ll stop being a useless whiner then,” Vinnie says. She tries to smile, but her lip is quivering. I pretend not to see. “Stay good, please, Warren.”
+ 
+“I’ll do my best,” I say.
+ 
+She squeezes my hand, then bolts from the hall and out the window, leaving Isaac and I in the hall.
+
+[[And so the end begins...|Regime Epilogue]]</tw-passagedata><tw-passagedata pid="60" name="Rebel Epilogue" tags="" position="620,4098" size="100,100">Rebel: $rebel
 Regime: $regime
-Mynatt: $obeyMynatt – $disobeyMynatt
-Bloodworth: $obeyBloodworth – $disobeyBloodworth</tw-passagedata></tw-storydata>
+Bloodworth: +$obeyBloodworth -$disobeyBloodworth
+Mynatt: +$obeyMynatt -$disobeyMynatt
+
+&lt;&lt;if $obeyMynatt &lt;= $disobeyMynatt&gt;&gt;\
+&lt;div class=&quot;writing&quot;&gt;\
+I do not wish to describe the details seen and heard and tasted throughout the battle. My work in law enforcement did not prepare me for the lawlessness of human battle, strife against strife and horror against horror.
+ 
+The dragons came, soon after. They burned hundreds of rebels, scorching fire engulfing their screaming, writhing bodies. Then they went for the manor, landing upon the roof and burning the immaculate building. I watched in horror from a corner of the courtyard as the manor went up in flames, the manor I had stood in only moments before. Vinnie beckoned me to follow her, but I could not.
+ 
+My thoughts were of Isaac and Isaac alone.
+ 
+I pulled away from her and ran back inside, scaling the same wall and entering through the window. I dashed through the halls as the air filled with evil smoke, threatening to scorch and choke the breath from my life. I found Isaac lying face down in a hall. I grabbed his body, unknowing if he were dead or alive, and dragged him from the danger. I exited the house.
+ 
+Thankfully, Isaac began coughing and wheezing as I carried him through the courtyard. He mumbled curses at me, and insults, but I didn’t care. He was safe.
+ 
+We made it back to the rebels, who were regrouping. Mynatt was preparing another attack.
+ 
+I stepped in front of her, snatched the quill pen from her hand, and snapped it in two.
+ 
+I gave a speech. I don’t remember much of the details of the speech, those must have been replaced with the stuff of nightmares I recall most vividly from the battle, but it must have been passionate, rousing, patriotic, etc. etc. because the rebels turned from Mynatt and began following me. I ordered a full retreat. We left for the hideout.
+ 
+Mynatt was livid, but so many died in her name and even she could not deny it. I had her stand trial and she condemned for abuse of her power. An election was held for a new leader, and Vinnie was chosen almost unanimously. She selected me as her right hand.
+ 
+During all of this, Isaac refused to speak to me. He was kept in a room, alone, not because of our designations, but because of his. I tried to speak with him, to explain myself, to tell jokes, I even referred to this journal as a diary, but to no avail. He barely acted like he heard me.
+ 
+The rebels and the aristocrats continued to fight, Bloodworth leading the counterattack. But then, we got him.
+ 
+Vinnie successfully figured out how to truly tame the dragons. Every night, she would sneak into the stables (she had long lost her job there, of course) and would retrain the dragons in obedience to her. When the rebels attacked Bloodworth Manor again, the estate was defenseless.
+ 
+I stopped the killing of Bloodworth. He stood trial, and was sentenced to life work inside a steam factory. Poetic, in a way.
+ 
+The remaining aristocrats fell in line. Vinnie and I established a democratic system of government. It took some time, but everything began to work itself out. I have been elected Head of Law Enforcement several times over at this point, and I am content.
+ 
+Isaac returned to Rivermire and also became Head of Law Enforcement there. I have not spoken to him. Relations between Stelstrom and Rivermire are tense.
+ 
+I don’t know what the future holds, but I do know that for now, I am content.
+&lt;/div&gt;\
+&lt;&lt;else&gt;&gt;\
+&lt;div class=&quot;writing&quot;&gt;\
+I do not wish to describe the details seen and heard and tasted throughout the battle. My work in law enforcement did not prepare me for the lawlessness of human battle, strife against strife and horror against horror.
+ 
+The dragons came, soon after. They burned hundreds of rebels, scorching fire engulfing their screaming, writhing bodies. Then they went for the manor, landing upon the roof and burning the immaculate building. I watched in horror from a corner of the courtyard as the manor went up in flames, the manor I had stood in only moments before. Vinnie beckoned me to follow her. I did so. I would find out later that Isaac died, choking on the dragon smoke, his lungs filling with charred breath.
+ 
+I imagine it incessantly. I have nightmares. Isaac, I am so sorry.
+ 
+The battle was a disaster. Mynatt ordered another attack, and all who attempted so died in the flames of the dragons. Seeing almost all of the rebels burned or burning, Mynatt ordered a retreat. We did so.
+ 
+At the hideout, Vinnie screamed and shouted at Mynatt, berating her, calling her a fool, tears running down her face. Mynatt was silent. When Vinnie’s voice choked into a raspy whisper, her words all spent, Mynatt struck her with a metal rod and knocked her to the ground. I rushed to her defense. Mynatt let me carry Vinnie out of the room.
+ 
+Vinnie has never been the same. She can’t talk. She can’t even really move. She just stares. She whimpers sometimes, a keening whine.
+ 
+I left the rebellion. There was no one there. There is no one in my life now. I write this from an alley, beneath a roof made of cloth. Mynatt and Bloodworth, who survived, of course, search for me. I’ve heard rumors they have sent assassins.
+ 
+I imagine it would be strange to be assassinated.
+&lt;/div&gt;\
+&lt;&lt;/if&gt;&gt;\</tw-passagedata><tw-passagedata pid="61" name="Regime Epilogue" tags="" position="244,4098" size="100,100">Rebel: $rebel
+Regime: $regime
+Bloodworth: +$obeyBloodworth -$disobeyBloodworth
+Mynatt: +$obeyMynatt -$disobeyMynatt
+
+&lt;&lt;if $obeyBloodworth &gt; $disobeyBloodworth&gt;&gt;\
+&lt;div class=&quot;writing&quot;&gt;\
+The dragons came. I did not see them, but I heard them and I sure as hell felt them. Their roars and screeches grew as the yells and shouts of the rebel silenced. I heard the crash of their feet and felt the shaking of the manor as they landed upon the roof. They spat fire upon the manor, and flames soon cracked and licked at our heels as Isaac and I flew through the halls.
+ 
+We managed to find Bloodworth, by sheer luck. He had built an underground passage and he allowed us to use it to escape. We did so.
+ 
+At the end of the passage was a spacious and comfortable dining room. A servant greeted us on the other side and brought us tea and scones. Around the table, Bloodworth told me the most shocking news. I was his son. Mother had worked as a maid for his family. When I asked if he had loved her, he laughed a laugh that sounded more like a dragon’s roar.
+ 
+What would she think of me? I ate my scone, despite the fact that I thought I could hear still hear the screams of hundreds of burning corpses. The scone tasted like blueberries.
+ 
+Isaac didn’t eat anything.
+ 
+After the “battle”, could it even be called such a thing, Bloodworth quickly rebuilt his manor. He invited Isaac and I to live with him. We did so. Bloodworth started a campaign to snuff out the remaining rebels. We assisted. Bloodworth publicly executed hundreds more rebels, some were children. We watched.
+ 
+The next day, Isaac had vanished. Bloodworth and I thought he had been kidnapped, but after weeks of searching, we found him again. He was working with the rebels. He and Vinnie took over leadership and together began gaining momentum. For years, we fought. I and Bloodworth in the attempt to create some form of peace in the city, and Isaac and Vinnie in the attempt to stir up hatred and discontent among all they came in contact with.
+ 
+With an ironic sense of both shame and bittersweetness, I noted in the tabloids one day that a common rumor said they got married. This rumor was confirmed true when Isaac, Vinnie, and their infant child were captured during a raid. Bloodworth executed them all.
+ 
+That killed the rebellion. It also killed Bloodworth- he was found dead in his bedroom, stabbed over and over and over until he did not even look like a human. Nobody knows who did it.
+ 
+Sometimes, I wonder if it was me.
+ 
+Bloodworth named me sole heir of all of his titles and estates. I rule Stelstrom now. It’s peaceful, and the people hate me.
+ 
+I feel the same.
+&lt;/div&gt;\
+&lt;&lt;else&gt;&gt;\
+&lt;div class=&quot;writing&quot;&gt;\
+The dragons came. I did not see them, but I heard them and I sure as hell felt them. Their roars and screeches grew as the yells and shouts of the rebel silenced. I heard the crash of their feet and felt the shaking of the manor as they landed upon the roof. They spat fire upon the manor, and flames soon cracked and licked at our heels as Isaac and I flew through the halls.
+ 
+We managed to find Bloodworth, by sheer luck. He had built an underground passage and he allowed us to use it to escape. We did so.
+ 
+At the end of the passage was a spacious and comfortable dining room. A servant greeted us on the other side and brought us tea and scones. Bloodworth sat at the table and invited us to join him.
+ 
+I was disgusted. Down the tunnel, hundreds of people were dying. Bloodworth daintily sipped his tea.
+ 
+I demanded to know how to stop the dragons. Bloodworth chuckled, but he told me how to release the steam that would calm them. He said if I chose to do so, I had to deal with the fallout entirely. I agreed.
+ 
+Isaac and I journeyed through the tunnels until we found the vault Bloodworth had mentioned. Inside the vault was a strange, chimney-like mechanism and, after much tinkering, cajoling, shouting, and frustration, Isaac finally got the mechanism to function by kicking it. He broke his toe, but it was well worth it. The mechanism functioned and released the steam, calming the dragons and giving the rebels enough time to escape.
+ 
+The next day, Bloodworth brought Isaac and I before a council of aristocrats. He told of our “failures” in the battle and then made me Head of Law Enforcement. The crowd laughed.
+ 
+They did not remain laughing for long.
+ 
+I quit funneling their taxes into military and instead funded housing, education, and community programs designed to assist in the needs necessary for specific areas. I cut criminalization for being a rebel and instead designated it as a new political party, giving it the right to appear in debates and in court as a public entity rather than a vigilante as long as its leader adhered to democratic standards. This quickly brought the end of Mynatt’s reign and Vinnie was voted as the new leader.
+ 
+It was an absolute pleasure watching her debate Bloodworth in a public hearing.
+ 
+Popular opinion concerning the rebels among the aristocracy shifted, and soon, Bloodworth had no supporters. He tried to kill me once, but the assassins were thwarted. That’s a perk of living in a manor, I suppose, there are a lot of eyes watching out for you. He was put on trial for the attempt, found guilty, and sentenced to heavily managed community service for the rest of his life, spending his nights in a refurnished slum with other convicts and his days clearing muck and trash from underdeveloped areas.
+ 
+Isaac left eventually, returning to Rivermire to accomplish the same feats. I could not have done it without him. He writes occasionally, but it was only recently that I learned that he writes to Vinnie far more often than he writes to me. I intend to mock him concerning the fact, but I’m honestly not upset at all about it. However, it’s what he deserves after referring to this journal as a diary for so long.
+ 
+My life is busy, but well. I am looking forward to the next chapter of it.
+&lt;/div&gt;\
+&lt;&lt;/if&gt;&gt;</tw-passagedata></tw-storydata>
